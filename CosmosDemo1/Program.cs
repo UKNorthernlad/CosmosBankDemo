@@ -37,7 +37,7 @@ namespace CosmosDemo1
             using (var client = new CosmosClient(EndpointUrl, PrimaryKey))
             {
                 var database = client.GetDatabase(DbId);
-                var collectionResponse = await database.CreateContainerIfNotExistsAsync(ColId, KeyPath, 10000);
+                var collectionResponse = await database.CreateContainerIfNotExistsAsync(ColId, KeyPath, 5000);
                 Console.WriteLine(collectionResponse.StatusCode.ToString());
             }
         }
