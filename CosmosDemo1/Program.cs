@@ -18,8 +18,8 @@ namespace CosmosDemo1
 
         static async Task Main(string[] args)
         {
-            //await CreateDatabase();
-            //await CreateCollection();
+            await CreateDatabase();
+            await CreateCollection();
             await CreateItems();
         }
 
